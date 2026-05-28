@@ -28,8 +28,9 @@ const SCOPE_ALIASES = {
 // ============================================================================
 
 const item    = $input.item.json;
-const envName = $('On VM Request Submission').first().json.body.environment;
-const isVcsim = envName === 'vcsim';
+//const envName = $('On VM Request Submission').first().json.body.environment;
+//const isVcsim = envName === 'vcsim';
+const isVcsim = 1;
 
 const meta     = safeJsonParse(item.provisioning_metadata, {});
 const students = safeJsonParse(item.students, []);
