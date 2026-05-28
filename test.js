@@ -27,7 +27,8 @@ const SCOPE_ALIASES = {
 // Input parsing
 // ============================================================================
 
-const item    = $input.item.json;
+//const item    = $input.item.json;
+const item = $input.all(1)[0].json;
 //const envName = $('On VM Request Submission').first().json.body.environment;
 //const isVcsim = envName === 'vcsim';
 const isVcsim = 1;
